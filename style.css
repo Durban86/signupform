@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+
+
+.container {
+    background-color: rgb(236, 241, 255);
+    margin: 100px 50px 0 50px;
+    height: 750px;
+    display: flex;
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.description {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.form-container {
+    height: 300px;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.logo {
+    position: absolute;
+}
+
+.background-image {
+    height: 750px;
+    width: 500px;
+}
