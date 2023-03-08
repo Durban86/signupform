@@ -1,39 +1,74 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf");
+  }
+
 body {
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 .container {
-    background-color: rgb(236, 241, 255);
-    margin: 100px 50px 0 50px;
-    height: 750px;
+    min-height: 100vh;
     display: flex;
 }
 
-.form-area {
+.bg-image {
+    background-position: center center;
+    background-image: url(images/bg-image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 35vw;
+    color: white;
+    text-align: center;
+}
+
+.bg-image a {
+    text-decoration: none;
+    color: white;
+}
+
+.bg-image a:hover {
+    color: steelblue;
+}
+
+.banner {
+    background-color: rgba(0,0,0,.5);
+    font-family: "Norse Bold";
+    padding: 20px;
+    margin-top: 20vh;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
 }
 
-.description {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    font-weight: bolder;
+.banner img {
+    height: 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 48px; 
 }
 
 .form-container {
-    width: 100%;
-    background-color: #FFF;
-    display: flex;
-    flex-direction: column;
+
 }
 
-.logo {
-    position: absolute;
+.submit {
+    padding: 5px;
+    margin-top: 20px;
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
 }
 
-.background-image {
-    height: 750px;
-    width: 500px;
+.submit:hover {
+    background-color: navy;
 }
