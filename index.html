@@ -25,71 +25,42 @@
             <form>
                 <div class="form-container">
                     <h2>Fill out the form below</h2>
-                    <div class="input">
-                        <div>
+                    <fieldset>
+                        <div class="form-row">
                             <label for="firstname">FIRST NAME</label>
                             <input id="firstname" name="firstname" type="text">
+                        </div>
+                        <div class="form-row">    
                             <label for="lastname">LAST NAME</label>
                             <input id="lastname" name="lastname" type="text">
                         </div>
-                        <div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-row">
                             <label for="email">EMAIL</label>
                             <input id="email" name="email" type="email">
+                        </div>
+                        <div class="form-row">
                             <label for="phone">PHONE NUMBER</label>
-                            <input id="phone" name="phone" type="text">
+                            <input id="phone" name="phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890">
                         </div>
-                        <div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-row">
                             <label for="password">PASSWORD</label>
-                            <input id="password" name="password" type="password">
-                            <label for="confirmpw">CONFIRM PASSWORD</label>
-                            <input id="confirmpw" name="confirmpw" type="password">
+                            <input id="password" name="password" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" onkeyup="passwordCheck();" required>
                         </div>
-                    </div>
+                        <div class="form-row">
+                            <label for="confirmpw">CONFIRM PASSWORD</label>
+                            <input id="confirmpw" name="confirmpw" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" onkeyup="passwordCheck();" required>
+                        </div>
+                    </fieldset>
                 </div>
                 <button class="submit">Create Account</button>
             </form>
             <p class="login">Already have an account? <a href="#">Log In</a></p>
         </div>  
     </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="container">
-        <div class="background-image">
-            <div class="logo-text">
-                <img src="images/odin-lined.png" alt="">ODIN
-            </div>
-        </div>
-        
-        <div class="form-area">
-            <p class="description">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-            <p class="description">You know you want to.</p>
-            <form>
-                <div class="form-container">
-                    <label for="firstname">FIRST NAME</label>
-                    <input id="firstname" name="firstname" type="text">
-                    <label for="lastname">LAST NAME</label>
-                    <input id="lastname" name="lastname" type="text">
-                    <label for="email">EMAIL</label>
-                    <input id="email" name="email" type="email">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input id="phone" name="phone" type="text">
-                    <label for="password">PASSWORD</label>
-                    <input id="password" name="password" type="password">
-                    <label for="confirmpw">CONFIRM PASSWORD</label>
-                    <input id="confirmpw" name="confirmpw" type="password">
-                </div>
-                <button>Create Account</button>
-            </form>
-            <p class="login">Already have an account? <a href="#">Log In</a></p>
-        </div>
-    </div> -->
+<script src="script.js"></script>
 </body>
 </html>

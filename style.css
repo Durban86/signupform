@@ -3,6 +3,10 @@
     src: url("./Norse-Bold.otf");
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +16,7 @@ body {
 .container {
     min-height: 100vh;
     display: flex;
+    background-color: #FAFAFA;
 }
 
 .bg-image {
@@ -53,22 +58,75 @@ body {
 .content {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    margin-left: 48px; 
+    flex-direction: column; 
+}
+
+.content p {
+    margin-left: 2rem;
+}
+
+.content p {
+    font-size: 24px;
 }
 
 .form-container {
+    padding: 2rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    background-color: #FFF;
+}
 
+fieldset {
+    display: flex;
+    border: none;
+    gap: 3rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row label {
+    font-size: .75rem;
+    color: steelblue;
+    font-weight: bold
+}
+
+.form-row input:valid {
+    border: 1px solid #E5E7EB;
+}
+
+.form-row input:focus {
+    outline-color: steelblue;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+.form-row input:invalid {
+    border: 2px solid red;
+    outline-color: red;
 }
 
 .submit {
     padding: 5px;
     margin-top: 20px;
+    margin-left: 2rem;
+    font-size: 24px;
     background-color: steelblue;
     color: white;
     font-weight: bold;
+    border: 2px solid navy;
+    border-radius: 10px;
 }
 
 .submit:hover {
     background-color: navy;
+}
+
+.login a {
+    text-decoration: none;
+    color: steelblue;
+}
+
+.login a:hover {
+    color: navy;
 }
